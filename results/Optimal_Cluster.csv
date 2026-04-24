@@ -1,0 +1,16 @@
+,,
+,,
+,SafeICU,
+,Vitals,Optimal Cluster
+,Heart Rate (HR),6
+,Respiratory Rate,5
+,Oxygen Saturation,5
+,Arterial Blood Pressure,5
+,,
+,,
+,MIMIC+EICU,
+,Vitals,Optimal Cluster
+,Heart Rate (HR),5
+,Respiratory Rate,5
+,Oxygen Saturation,6
+,Arterial Blood Pressure,6
