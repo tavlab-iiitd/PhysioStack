@@ -1,12 +1,12 @@
-## 📈 TempoVital-RT: Resolution-Adaptive Models for Physiological Time Series
+## 📈 PhysioStack: Resolution-Adaptive Models for Physiological Time Series
 
-TempoVital-RT is a family of BERT-style models trained on symbolic representations of ICU vital signs at multiple temporal resolutions (e.g., 5, 10, 15, 30, 60 minutes).  
+PhysioStack is a family of BERT-style models trained on symbolic representations of ICU vital signs at multiple temporal resolutions (e.g., 5, 10, 15, 30, 60 minutes).  
 This repository contains the whole pipeline:
 
 - Data preprocessing and cleaning  
 - Symbolic conversion of vital-sign time series  
 - Hyperparameter optimization with Optuna  
-- Masked Language Modeling (MLM) training of TempoVital-RT  
+- Masked Language Modeling (MLM) training of PhysioStack  
 - Evaluation (MLM accuracy, resolution transfer)  
 - Scripts to reproduce key figures and results
 
@@ -14,7 +14,7 @@ This repository contains the whole pipeline:
 
 ## 🔍 1. Overview
 
-Modern ICUs generate rich, high-frequency physiological time series. TempoVital-RT learns resolution-adaptive representations of these signals to support:
+Modern ICUs generate rich, high-frequency physiological time series. PhysioStack learns resolution-adaptive representations of these signals to support:
 
 - Imputation and forecasting
 - Early risk stratification
@@ -30,7 +30,7 @@ This codebase is designed to be:
 
 ## 🗂️ 2. Repository Structure
 
-- **TempoVital-RT/**  
+- **PhysioStack/**  
   - `scripts/` – command-line tools  
   - `notebooks/` – exploration and visualization   
   - `results/` – generated plots and evaluation metrics   
@@ -41,7 +41,7 @@ This codebase is designed to be:
 
 ## 📊 3. Datasets
 
-TempoVital-RT is trained and evaluated on three ICU datasets.  
+PhysioStack is trained and evaluated on three ICU datasets.  
 Links to all datasets are provided below.  
 Please note that MIMIC and eICU require authorized access through PhysioNet, while SAFE-ICU requires authorized access through the SafeICU database.
 
@@ -51,7 +51,7 @@ Please note that MIMIC and eICU require authorized access through PhysioNet, whi
 High-resolution pediatric ICU dataset containing vital signs, treatment charts, labs, and notes.
 
 📌 **Dataset Link:**  
-🔗 *http://192.168.3.178:8200/project/safeicu/*
+🔗 *safeicu.aiims.edu.in*
 
 
 
@@ -80,7 +80,7 @@ https://physionet.org/content/eicu-crd/2.0/
 
 ## 🧠 4. Models
 
-Pretrained TempoVital-RT models (across multiple temporal resolutions) are packaged inside a Docker image for easy access and reproducibility.
+Pretrained PhysioStack models (across multiple temporal resolutions) are packaged inside a Docker image for easy access and reproducibility.
 
 ### 🔹 4.1 Pull the Docker Image
 
@@ -94,7 +94,7 @@ Pretrained TempoVital-RT models (across multiple temporal resolutions) are packa
 
 ### 🔹 4.3 Locate the Pretrained Models
 
-After entering the container, the pretrained TempoVital-RT models are available at:
+After entering the container, the pretrained PhysioStack models are available at:
 
 `ls /opt/models`
 
@@ -104,9 +104,9 @@ After entering the container, the pretrained TempoVital-RT models are available 
 
 ### 🔹 4.4 Loading the Models in Python
 
-An example Jupyter notebook demonstrating how to load and use the pretrained TempoVital-RT models is provided in the repository:
+An example Jupyter notebook demonstrating how to load and use the pretrained PhysioStack models is provided in the repository:
 
-**`TempoVital-RT/notebooks/load_models.ipynb`**
+**`PhysioStack/notebooks/load_models.ipynb`**
 
 ---
 
